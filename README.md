@@ -15,9 +15,9 @@
 ### Running the example:
 
 1. Download the example
-    * Option 1: `git clone https://github.com/applitools/tutorial-nightwatch.git`
+    * Option 1: `git clone https://github.com/applitools/tutorial-nightwatch-ultrafastgrid.git`
     * Option 2: Download it as a Zip file and extract it
-2. CD into the `tutorial-nightwatch` folder
+2. CD into the `tutorial-nightwatch-ultrafastgrid` folder
 3. Change the `APPLITOOLS_API_KEY` with your own.
     * Login to Applitools > Click on the Person icon > My API Key
 4. run `npm install`
