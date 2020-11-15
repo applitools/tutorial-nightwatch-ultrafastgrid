@@ -1,0 +1,23 @@
+{
+  "name": "tutorial-nightwatch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applitools/tutorial-nightwatch.git"
+  },
+  "author": "Applitools Team <team@applitools.com> (http://www.applitools.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/applitools/tutorial-nightwatch/issues"
+  },
+  "homepage": "https://github.com/applitools/tutorial-nightwatch#readme",
+  "devDependencies": {
+    "@applitools/eyes-nightwatch": "latest",
+    "nightwatch": "1.3.4"
+  }
+}
