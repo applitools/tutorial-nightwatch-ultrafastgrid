@@ -1,6 +1,6 @@
 const {Target} = require('@applitools/eyes-nightwatch')
 module.exports = {
-    'Classic Runner Test': function(browser) {
+    'Ultrafast Test': function(browser) {
         browser
             .url('https://demo.applitools.com')
             .eyesOpen('Demo App', 'Smoke Test', {width: 800, height: 600})

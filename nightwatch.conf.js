@@ -25,7 +25,7 @@ module.exports = {
     },
   },
   eyes: {
-    apiKey: 'APPLITOOLS_API_KEY', // You can get your api key from the Applitools dashboard
+    //apiKey: 'APPLITOOLS_API_KEY', // You can get your api key from the Applitools dashboard
     batch: {
       name: 'Ultrafast Batch'
     },
@@ -38,7 +38,8 @@ module.exports = {
       {name: BrowserType.SAFARI, width: 800, height: 600},
       {chromeEmulationInfo: {deviceName: DeviceName.iPhone_X, screenOrientation: ScreenOrientation.PORTRAIT}},
       {chromeEmulationInfo: {deviceName: DeviceName.Pixel_2, screenOrientation: ScreenOrientation.PORTRAIT}},
-    ]
+    ],
+    concurrency: 1
     // enableEyesLogs: true
   }
 }
