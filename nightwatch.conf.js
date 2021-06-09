@@ -1,4 +1,5 @@
 const {BrowserType, DeviceName, ScreenOrientation} = require('@applitools/eyes-nightwatch')
+const host = (process.env.CI === 'true') ? 'selenium' : 'localhost'
 module.exports = {
   src_folders: ['test'],
   custom_commands_path:  'node_modules/@applitools/eyes-nightwatch/commands',
@@ -21,6 +22,7 @@ module.exports = {
       webdriver: {
         port: 4444,
         default_path_prefix: '/wd/hub',
+        host,
       },
     },
   },
@@ -39,7 +41,7 @@ module.exports = {
       {chromeEmulationInfo: {deviceName: DeviceName.iPhone_X, screenOrientation: ScreenOrientation.PORTRAIT}},
       {chromeEmulationInfo: {deviceName: DeviceName.Pixel_2, screenOrientation: ScreenOrientation.PORTRAIT}},
     ],
-    concurrency: 1
+    concurrency: 5
     // enableEyesLogs: true
   }
 }
